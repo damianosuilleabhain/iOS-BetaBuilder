@@ -1,2 +1,3 @@
-Quick implementation of Dropbox SDK 1.3.3
-Beta Builder needs to be reloaded after having been authorized via OAuth, it should definitely implement a callBack but it'late and I'm lazy tonight.
+Fixes issue whereby iOS 7.1 requires that manifest urls use SSL
+
+Forked from the most recent fork which includes Dropbox Integration.

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DA5DAFB1A252030007C32C7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA5DAFA1A252030007C32C7 /* Security.framework */; };
+		2DA5DAFD1A252037007C32C7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA5DAFC1A252037007C32C7 /* Cocoa.framework */; };
 		D32C1E1B1532707800672F20 /* DBKeychain-OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = D32C1E191532707800672F20 /* DBKeychain-OSX.m */; };
 		D32C1E2515327BCA00672F20 /* DBRestClient+OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A120A1527C21700D3BC28 /* DBRestClient+OSX.m */; };
 		D33A120C1527C21700D3BC28 /* DBRestClient+OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A120A1527C21700D3BC28 /* DBRestClient+OSX.m */; };
@@ -14,7 +16,6 @@
 		D33A122D152EB42100D3BC28 /* DBKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = D33A122B152EB42000D3BC28 /* DBKeychain.h */; };
 		D33A122E152EB42100D3BC28 /* DBKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = D33A122B152EB42000D3BC28 /* DBKeychain.h */; };
 		D356AF301533F092002EE795 /* DBKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = D33A122B152EB42000D3BC28 /* DBKeychain.h */; };
-		D36931CE15088350003FBA23 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36931CD15088350003FBA23 /* Cocoa.framework */; };
 		D36931E1150884E4003FBA23 /* DBAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D387581214135C3E0013E17C /* DBAccountInfo.m */; };
 		D36931E2150884E4003FBA23 /* DBError.m in Sources */ = {isa = PBXBuildFile; fileRef = D387581414135C3E0013E17C /* DBError.m */; };
 		D36931E3150884E4003FBA23 /* DBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D387581614135C3E0013E17C /* DBLog.m */; };
@@ -85,7 +86,6 @@
 		D369322415088508003FBA23 /* DBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D387584114135C3E0013E17C /* DBJsonParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D369322515088508003FBA23 /* DBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = D387584214135C3E0013E17C /* DBJsonWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D369322D150885AA003FBA23 /* DBRestClient+OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = D36932261508857E003FBA23 /* DBRestClient+OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3693230150886A6003FBA23 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D369322E1508867E003FBA23 /* Security.framework */; };
 		D376A9D4160303B3003B73DB /* DBConnectController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ED1B421559F9950023FE9F /* DBConnectController.m */; };
 		D376A9D5160303B3003B73DB /* DBSession+iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A120B1527C21700D3BC28 /* DBSession+iOS.m */; };
 		D387586314135C3E0013E17C /* DBAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D387581214135C3E0013E17C /* DBAccountInfo.m */; };
@@ -208,6 +208,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DA5DAFA1A252030007C32C7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		2DA5DAFC1A252037007C32C7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3196B831412FE180060E7C6 /* DropboxSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropboxSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3196B841412FE180060E7C6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -216,13 +218,11 @@
 		D33A120B1527C21700D3BC28 /* DBSession+iOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DBSession+iOS.m"; path = "Classes/DBSession+iOS.m"; sourceTree = SOURCE_ROOT; };
 		D33A122B152EB42000D3BC28 /* DBKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKeychain.h; sourceTree = "<group>"; };
 		D36931CC15088350003FBA23 /* DropboxOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DropboxOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D36931CD15088350003FBA23 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		D36931D015088350003FBA23 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D36931D115088350003FBA23 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D36931D215088350003FBA23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D36932261508857E003FBA23 /* DBRestClient+OSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DBRestClient+OSX.h"; sourceTree = "<group>"; };
 		D36932281508857E003FBA23 /* DropboxOSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxOSX.h; sourceTree = "<group>"; };
-		D369322E1508867E003FBA23 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		D387581214135C3E0013E17C /* DBAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBAccountInfo.m; path = ../DBAccountInfo.m; sourceTree = "<group>"; };
 		D387581314135C3E0013E17C /* DBDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBDefines.h; path = ../DBDefines.h; sourceTree = "<group>"; };
 		D387581414135C3E0013E17C /* DBError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBError.m; path = ../DBError.m; sourceTree = "<group>"; };
@@ -322,8 +322,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3693230150886A6003FBA23 /* Security.framework in Frameworks */,
-				D36931CE15088350003FBA23 /* Cocoa.framework in Frameworks */,
+				2DA5DAFD1A252037007C32C7 /* Cocoa.framework in Frameworks */,
+				2DA5DAFB1A252030007C32C7 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +351,6 @@
 		0867D691FE84028FC02AAC07 /* DropboxSDK */ = {
 			isa = PBXGroup;
 			children = (
-				D369322E1508867E003FBA23 /* Security.framework */,
 				D387581114135C3E0013E17C /* Classes */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
@@ -362,11 +361,12 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2DA5DAFC1A252037007C32C7 /* Cocoa.framework */,
+				2DA5DAFA1A252030007C32C7 /* Security.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 				D3A7352113DE89B100C52E4F /* Security.framework */,
 				D3A7362913DE8AD500C52E4F /* UIKit.framework */,
 				D3196B841412FE180060E7C6 /* CoreFoundation.framework */,
-				D36931CD15088350003FBA23 /* Cocoa.framework */,
 				D36931CF15088350003FBA23 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -978,7 +978,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				INFOPLIST_FILE = "Classes/DropboxOSX-Info.plist";
@@ -1011,7 +1011,7 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/DropboxOSX-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				INFOPLIST_FILE = "Classes/DropboxOSX-Info.plist";
